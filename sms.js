@@ -27,15 +27,6 @@ if (!key || !phone || !time) {
             code: '200'
         }
         res.status(200).send(jsonData)//;
-        /*exec(`py sms.py ${phone} ${time}`, (error, stdout, stderr) => {  
-        console.log('sms run');
-        })
-        exec(`py sms1.py ${phone} ${time}`, (error, stdout, stderr) => {  
-            console.log('sms run');
-        })
-        exec(`py sms2.py ${phone} ${time}`, (error, stdout, stderr) => {  
-            console.log('sms run');
-        })*/
     } else {
         const err_url = {
             message: `coi lại url thiếu phone`,
